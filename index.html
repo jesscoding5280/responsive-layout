@@ -2,35 +2,57 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Jess Murray's Portfolio</title>
+    <title>Jessica Murray's Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Montserrat:wght@300&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <p>Hi! I'm a front-end developer who loves responsive design and css. I recently finished learning front-end web development at Treehouse and am excited to puall all my skills to use!</p>    
+    <div class="containter">
+        <header class="main-header">
+            <h1><a class="name" href="#">Jessica Murray</a></h1>
+            <div class="nav">
+                <div><a href="#">Home</a></div>
+                <div><a href="#">Portfolio</a></div>
+                <div><a href="#">Contact</a></div>
+            </div>
+        </header>
+    </div>  
 
-    <h1>Portfolio</h1>
-    <ul>Marketing Page</ul>
-    <ul>Search Page</ul>
-    <ul>Travel App</ul>
-    <ul>Map of Favorite Spots</ul>
-    <ul>Photo Gallery</ul>
-    <ul>Calculator</ul>
+    <main>
+        <div class="main-content">
+            <p>Hi! I'm a front-end developer who loves responsive design and css. I recently finished learning front-end web development at Treehouse and am excited to puall all my skills to use!</p>       
+            <h2>Portfolio</h2>
+            <div>Marketing Page</div>
+            <div>Search Page</div>
+            <div>Travel App</div>
+            <div>Map of Favorite Spots</div>
+            <div>Photo Gallery</div>
+            <div>Calculator</div>
+        </div>    
+        <!--Marketing Page: This project shows the front page of a marketing website meant for a specific business I'm interested in.
+        Search Page: This project searches through a specific database to find information that the user is trying to look up.
+        Travel App: This project compares travel times based on different transportation methods and tells you the best one.
+        Map of Favorite Spots: This prject uses mapping apis to plot points for my favorite spots in the city for a do-it-yourself walking tour.
+        Photo Gallery: This project shows pictures from a recent trip to the viewer and allows them to easily navigate through photos.
+        Calculator: Someone can enter in the numbers they want, and press the big blue botton and get the result.-->       
+    </main>
 
-    <h1>Contact</h1>
+    <h2>Contact</h2>
     <p>If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
-    <p>Phone <br>+1 (111) 555-1234</p>
-    <p>Email <br>jesscoding5280@me.com</p>
+    <p>Phone +1 (111) 555-1234</p>
+    <p>Email jesscoding5280@me.com</p>
 </body>
 
-<footer>
-    <ul>Jessica Murray</ul>
-    <ul>Home</ul>
-    <ul>Portfolio</ul>
-    <ul>Contact</ul>
+<footer class="main-footer">
+    <ul class="inside-footer">
+        <div><a href="#">Jessica Murray</a></div>
+        <div><a href="#">Home</a></div>
+        <div><a href="#">Portfolio</a></div>
+        <div><a href="#">Contact</a></div>
+    </ul>
 </footer>
 </html>
