@@ -1,43 +1,60 @@
-
-.main-header, 
-.nav,
-.row  {
+.body  {
     display: flex;
     flex-direction: column;
+    min-height: 100vh;
 }
 
-.main-header {
-    padding-top: 1em;
+.container {
+    background: teal;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    padding: .5em;
 }
 
-.main-header a {
+.name {
+    font-size: 2em;
+}
+
+.nav a {
     font-family: 'DM Serif Display', serif;
     color: olive;
     background-color: papayawhip;
-    border: 1px solid rebeccapurple;
-       display: block;
-    font-size: 1.5em;
+    display: block;
+    font-size: 1em;
     font-weight: 0;
     text-align: center;
     padding: .3em;
     width: auto;
-    margin: 1px;
+    margin: 5px;
+    text-transform: uppercase;
+    letter-spacing: .09em;
+}
+
+.profile {
+    width: 300px;
 }
 
 .wrapper {
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
-    font-family: 'Montserrat', sans-serif;
-    text-align: center;
 
+
+}
+.wrapper h2 {
+    padding: 2em;
+    text-transform: uppercase;
+}
+
+.row {
+    background-color: tomato;
 }
 
 .row,
 .row img {
     width: 100%;
-    background-color: cornflowerblue;
 }
+
 
 
 /*-----------------
@@ -76,10 +93,11 @@ Media Queries
         margin-left: .5em;
         margin-right: .5em;
     }
-    }
     .profile {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-evenly;
         flex-basis: 0;
+   
+    }
 }
