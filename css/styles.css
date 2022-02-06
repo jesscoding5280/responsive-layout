@@ -1,24 +1,41 @@
-.body  {
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body  {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
 
-.container {
-    background: teal;
+#container,
+.footer-container {
+    background: rosybrown;
     font-family: 'Montserrat', sans-serif;
     text-align: center;
     padding: .5em;
 }
 
-.name {
+a,
+footer-container a {
+    text-decoration:none;
+}
+
+.logo {
     font-size: 2em;
 }
 
-.nav a {
+.main-nav,
+.footer-nav {
+    list-style: none;
+}
+
+.nav {
     font-family: 'DM Serif Display', serif;
-    color: olive;
-    background-color: papayawhip;
+    color: rebeccapurple;
+    background-color: lavenderblush;
     display: block;
     font-size: 1em;
     font-weight: 0;
@@ -31,73 +48,89 @@
 }
 
 .profile {
-    width: 300px;
+    width: 280px;
 }
 
 .wrapper {
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
-
-
 }
-.wrapper h2 {
+
+.wrapper h2,
+.contact h2 {
     padding: 2em;
     text-transform: uppercase;
 }
 
-.row {
-    background-color: tomato;
-}
-
-.row,
+.wrapper,
 .row img {
     width: 100%;
+    background-color: lavender;
 }
 
+.branding,
+p,
+.attribute li  {
+    padding: 15px 0;
+}
 
+.code {
+    width: 280px; 
+    background-color: slateblue   
+}
+
+footer {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.footer-container a {
+    color: black;
+    padding: 0 20px;
+}
+
+.full {
+    display: none;
+}
 
 /*-----------------
 Media Queries
 -----------------*/
 
-@media (min-width: 769px) {
-    .main-header {
+@media (min-width: 768px) {
+    .main-class,
+    .main-nav,
+    .branding,
+    .portfolio {
+        display: flex;
+    }
+
+    .main-class {
         flex-direction: column;
         align-items: center;
-        justify-content: flex-end;
     }
-    .nav {
-        margin-top: 3em;
-        flex-direction: row;
-        justify-content: space-between;
+
+    .profile-summary {
+        order: -1;
+        text-align: left;
     }
-    .nav a {
-        border-bottom-color: transparent;
+
+    .top {
+        display: none;
+    }
+
+    .full {
+        display: inline-block;
+        margin-left: 20px;
     }
 }
-
-@media (min-width: 1025px) {
-    .main-header {
+@media (min-width: 1024px) {
+    .main-class {
         flex-direction: row;
         justify-content: space-between;
     }
-    .name {
-        margin-right: auto;
-    }
-    .nav {
-        margin-top: 0;
-        align-self: center;
-    }
-    .nav a {
-        margin-left: .5em;
-        margin-right: .5em;
-    }
-    .profile {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        flex-basis: 0;
-   
-    }
+
 }
