@@ -1,44 +1,53 @@
 *{
     box-sizing: border-box;
-    padding: 0;
     margin: 0;
+    padding: 0;
 }
 
 body  {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    max-width: 1024px;
+    margin: auto;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+a {
+    text-decoration:none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    color: aliceblue;
 }
 
 #container,
 .footer-container {
-    background: rosybrown;
+    background: gainsboro;
     font-family: 'Montserrat', sans-serif;
     text-align: center;
     padding: .5em;
 }
 
-a,
-footer-container a {
-    text-decoration:none;
-}
-
 .logo {
-    font-size: 2em;
-}
-
-.main-nav,
-.footer-nav {
-    list-style: none;
+    font-size: 1.5em;
+    color: darkcyan;
 }
 
 .nav {
     font-family: 'DM Serif Display', serif;
-    color: rebeccapurple;
-    background-color: lavenderblush;
+    color: darkslategray;
+    background-color: cadetblue;
     display: block;
     font-size: 1em;
-    font-weight: 0;
+    font-weight: 300;
     text-align: center;
     padding: .3em;
     width: auto;
@@ -48,36 +57,48 @@ footer-container a {
 }
 
 .profile {
-    width: 280px;
+    width: 300px;
 }
 
 .wrapper {
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
+    display: inline-block;
+    max-width: 1100px;
+    margin: 0 auto;
 }
 
-.wrapper h2,
-.contact h2 {
-    padding: 2em;
+.row,
+.skill {
+    margin: 10px;
+    min-height: 250px;
+    background-color: white;
+    text-align: center;
+}
+
+h2 {
+    padding: 20px;
     text-transform: uppercase;
 }
 
-.wrapper,
+.portfolio,
 .row img {
     width: 100%;
-    background-color: lavender;
+    background-color: cadetblue;
 }
 
 .branding,
 p,
 .attribute li  {
-    padding: 15px 0;
+    padding: 15px 10px;
 }
 
 .code {
     width: 280px; 
-    background-color: slateblue   
+    background-color: lightgrey;   
+}
+
+hr {
+    margin: auto;
+    width: calc(100% - 20px);    
 }
 
 footer {
@@ -88,8 +109,8 @@ footer {
 }
 
 .footer-container a {
-    color: black;
-    padding: 0 20px;
+    color: darkslategray;
+    padding: 0 5px 0 0;
 }
 
 .full {
@@ -104,7 +125,8 @@ Media Queries
     .main-class,
     .main-nav,
     .branding,
-    .portfolio {
+    .wrapper,
+    .attribute {
         display: flex;
     }
 
@@ -117,6 +139,28 @@ Media Queries
         order: -1;
         text-align: left;
     }
+
+    .nav {
+        background-color: transparent;
+    }
+
+    .wrapper {
+        flex-wrap: wrap;
+    }
+
+    .row {
+        flex-basis: calc(50% - 20px);
+    }
+
+    .attribute {
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+   
+   .col {
+       flex: 1 33%
+   }
 
     .top {
         display: none;
@@ -131,6 +175,10 @@ Media Queries
     .main-class {
         flex-direction: row;
         justify-content: space-between;
+    }
+
+    .row {
+        flex-basis: calc(33.333% - 20px);
     }
 
 }

@@ -12,73 +12,77 @@
 
 <body>
     <div id="container">
-        <header class="main-class">
+        <nav class="main-class">
             <h1><a class="logo" href="#">Jessica Murray</a></h1>
             <ul class="main-nav">
                 <li><a class="nav" href="#top">Home</a></li>   
-                <li><a class="nav" href="#portfolio">Portfolio</a></li>   
-                <li><a class="nav" href="#skill">Skills</a></li>   
-                <li><a class="nav" href="#contact">Contact</a></li> 
+                <li><a class="nav" href="#port">Portfolio</a></li>   
+                <li><a class="nav" href="#talent">Skills</a></li>   
+                <li><a class="nav" href="#social">Contact</a></li> 
             </ul>
-        </header>
+        </nav>
             <div class="branding">
                 <img class="profile" src="css/responsive-layout-profile.png" alt="Profile picture of me">
                 <p class="profile-summary">Hi! I'm a front-end developer who loves responsive design and css. I recently finished learning front-end web development at Treehouse and am excited to put all all my skills to use!</p>       
             </div>
 
-        <div class="wrapper">
-            <h2 id="portfolio">Portfolio</h2>
-                <div class="row">
-                    <img class="marketing-img" src="css/portfolio-1.png" alt="Preview of Marketing Page layout">
-                    <h3>Marketing Page</h3>
-                    <p>This project shows the front page of a marketing website meant for a specific business I'm interested in.</p>
-                </div>
-                <div class="row">
-                    <img class="search-img" src="css/portfolio-2.png" alt="Preview of Portfolio Page layout">
-                    <h3>Search Page</h3>
-                    <p>This project searches through a specific database to find information that the user is trying to look up.</p>
-                </div>
-                <div class="row">
-                    <img class="travel-img" src="css/portfolio-3.png" alt="Preview of Travel Page layout">
-                    <h3>Travel App</h3>
-                    <p>This project compares travel times based on different transportation methods and tells you the best one.</p>
-                </div>
-                <div class="row">
-                    <img class="spots-img" src="css/portfolio-4.png" alt="Preview of Favorite Spots layout">
-                    <h3>Map of Favorite Spots</h3>
-                    <p>This prject uses mapping apis to plot points for my favorite spots in the city for a do-it-yourself walking tour.</p>
-                </div>
-                <div class="row">
-                    <img class="gallery-img" src="css/portfolio-5.png" alt="Preview of Photo Gallery layout">
-                    <h3>Photo Gallery</h3>
-                    <p>This project shows pictures from a recent trip to the viewer and allows them to easily navigate through photos.</p>
-                </div>
-                <div class="row">
-                    <img class="calculator-img" src="css/portfolio-6.png" alt="Preview of Calculator layout">
-                    <h3>Calculator</h3>
-                    <p>Someone can enter in the numbers they want, and press the big blue botton and get the result.</p>
-                </div>
-            <section class="attribute">
-                <h2 id="skill">Skills</h2>
+        <div class="portfolio">
+            <h2 id="port">Portfolio</h2>
+            <div class="wrapper">
+                    <div class="row">
+                        <img class="marketing-img" src="css/portfolio-1.png" alt="Preview of Marketing Page layout">
+                        <h3>Marketing Page</h3>
+                        <p>This project shows the front page of a marketing website meant for a specific business I'm interested in.</p>
+                    </div>
+                    <div class="row">
+                        <img class="search-img" src="css/portfolio-2.png" alt="Preview of Portfolio Page layout">
+                        <h3>Search Page</h3>
+                        <p>This project searches through a specific database to find information that the user is trying to look up.</p>
+                    </div>
+                    <div class="row">
+                        <img class="travel-img" src="css/portfolio-3.png" alt="Preview of Travel Page layout">
+                        <h3>Travel App</h3>
+                        <p>This project compares travel times based on different transportation methods and tells you the best one.</p>
+                    </div>
+                    <div class="row">
+                        <img class="spots-img" src="css/portfolio-4.png" alt="Preview of Favorite Spots layout">
+                        <h3>Map of Favorite Spots</h3>
+                        <p>This prject uses mapping apis to plot points for my favorite spots in the city for a do-it-yourself walking tour.</p>
+                    </div>
+                    <div class="row">
+                        <img class="gallery-img" src="css/portfolio-5.png" alt="Preview of Photo Gallery layout">
+                        <h3>Photo Gallery</h3>
+                        <p>This project shows pictures from a recent trip to the viewer and allows them to easily navigate through photos.</p>
+                    </div>
+                    <div class="row">
+                        <img class="calculator-img" src="css/portfolio-6.png" alt="Preview of Calculator layout">
+                        <h3>Calculator</h3>
+                        <p>Someone can enter in the numbers they want, and press the big blue botton and get the result.</p>
+                    </div>
+                <div class="skill">
+                <h2 id="talent">Skills</h2>
                     <img class="code" src="css/code-skill.png" alt="Clipart of closing tag brackets">
-                    <ul>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>Responsive Design</li>
-                        <li>Sarcastic Professional</li>
-                        <li>Self-Taught Web Developer</li>
-                        <li>Binge-Watcher</li>
-                        <li>Microsoft Office Suite</li>
-                        <li>Adobe Suite</li>
+                    <ul class="attribute">
+                        <li class="col">HTML</li>
+                        <li class="col">CSS</li>
+                        <li class="col">Responsive Design</li>
+                        <li class="col">Sarcastic Professional</li>
+                        <li class="col">Self-Taught Web Developer</li>
+                        <li class="col">Binge-Watcher</li>
+                        <li class="col">Microsoft Office Suite</li>
+                        <li class="col">Adobe Suite</li>
+                        <li class="col">Dog Enthusiast</li>
                     </ul>
-            </section>    
+                </div> 
+            </div>    
         </div>
 
         <section class="contact">
-            <h2 id="contact">Contact</h2>
+            <h2 id="social">Contact</h2>
                 <p>If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
                 <p>Phone <strong>+1 (111) 555-1234</strong></p>
                 <p>Email <strong>jesscoding5280@me.com</strong><p>
+            <hr />
         </section>
     </div><!--Container-->
 </body>
@@ -88,8 +92,8 @@
     <ul class="footer-nav">
         <li class ="top"><a href="#top">Back to Top</a></li>
         <li class ="full"><a href="#top">Home</a></li>
-        <li class ="full"><a href="#portfolio">Portfolio</a></li>
-        <li class ="full"><a href="#skill">Skills</a></li>
-        <li class ="full"><a href="#contact">Contact</a></li>
+        <li class ="full"><a href="#port">Portfolio</a></li>
+        <li class ="full"><a href="#talent">Skills</a></li>
+        <li class ="full"><a href="#social">Contact</a></li>
     </ul>
 </footer>
