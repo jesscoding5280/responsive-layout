@@ -113,6 +113,10 @@ footer {
     padding: 0 5px 0 0;
 }
 
+footer h2 {
+    font-size: 1em;    
+}
+
 .full {
     display: none;
 }
